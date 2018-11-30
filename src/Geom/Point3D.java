@@ -34,6 +34,8 @@ public class Point3D implements Geom_element, Serializable
     public Point3D(String s)
     {
         s = s.replace(" ", "");
+        s = s.replace("(", "");
+        s = s.replace(")", "");
         String[] a = s.split(",");
         _x = Double.parseDouble(a[0]);
         _y = Double.parseDouble(a[1]);
