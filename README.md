@@ -1,6 +1,6 @@
 # Geographic Information System
 
-## This project was built using Intellij IDE.
+### This project was built using Intellij IDE.
 
 ### This project builds a KML file from a given CSV folder/file, see: https://developers.google.com/kml/
 
