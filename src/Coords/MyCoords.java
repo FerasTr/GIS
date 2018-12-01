@@ -66,9 +66,9 @@ public class MyCoords implements coords_converter
         // Longitude normal:
         double longitude_normal = Math.cos(Math.toRadians(gps0.x()));
         // Calculating delta X and delta Y:
-        double diff_x = gps0.x() - gps1.x();
-        double diff_y = gps0.y() - gps1.y();
-        double diff_z = gps0.z() - gps1.z();
+        double diff_x = gps1.x() - gps0.x();
+        double diff_y = gps1.y() - gps0.y();
+        double diff_z = gps1.z() - gps0.z();
         // Converting to Cartesian coordinates:
         // To Radian:
         diff_x = Math.toRadians(diff_x);
