@@ -5,6 +5,9 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/**
+ * This class holds multiple files as an object for later use, metadata is about time creation
+ */
 public class Project_GIS implements GIS_project
 {
     private MetadataOfCollection_GIS metadata_of_files;

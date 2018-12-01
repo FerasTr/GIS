@@ -1,7 +1,5 @@
 package Geom;
 
-import Coords.MyCoords;
-
 import java.io.Serializable;
 
 public class Point3D implements Geom_element, Serializable
@@ -142,8 +140,6 @@ public class Point3D implements Geom_element, Serializable
         return "Point3D " + _x + " " + _y + " " + _z;
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////
-
     public final static int ONSEGMENT = 0, LEFT = 1, RIGHT = 2, INFRONTOFA = 3, BEHINDB = 4, ERROR = 5;
     public final static int DOWN = 6, UP = 7;
 
@@ -175,21 +171,7 @@ public class Point3D implements Geom_element, Serializable
 
 
     /**
-     * pointLineTest <br>
-     * test the following location of a point regards a line segment - all in 2D projection.<br><br>
-     * <p>
-     * ONSEGMENT:  �����a----+----b������                              <br> <br>
-     * <p>
-     * +       +        +                              <br>
-     * LEFT:	 �����a---------b������                              <br> <br>
-     * <p>
-     * <p>
-     * RIGHT:	 �����a---------b������                              <br>
-     * +      +        +                              <br> <br>
-     * <p>
-     * INFRONTOFA:  ��+��a---------b������                              <br>
-     * BEHINDB:  �����a---------b����+�                              <br>
-     * ERROR: a==b || a==null || b == null;                               <br>
+     * Tests the following location of a point regards a line segment - all in 2D projection.
      */
 
     public int pointLineTest(Point3D a, Point3D b)
@@ -231,8 +213,6 @@ public class Point3D implements Geom_element, Serializable
         return ERROR;
     }
 
-
-    ////////////////////////////////////////////////////////////////
     public void rescale(Point3D center, Point3D vec)
     {
         if (center != null && vec != null) rescale(center, vec.x(), vec.y(), vec.z());
@@ -296,7 +276,7 @@ public class Point3D implements Geom_element, Serializable
     }
 
     /**
-     * return the (planer angle of the vector between this --> p, in DEGREES, in a
+     * return the (planer angle of the vector between this to p, in DEGREES, in a
      * compass order: north 0, east 90, south 180, west 270.
      *
      * @param p is the end point of the vector (z value is ignored).
@@ -314,7 +294,7 @@ public class Point3D implements Geom_element, Serializable
     }
 
     /**
-     * return the vertical angles in DEGREES of the vector this-->p
+     * return the vertical angles in DEGREES of the vector this top
      */
     public double up_angle(Point3D p)
     {
@@ -324,7 +304,7 @@ public class Point3D implements Geom_element, Serializable
     }
 
     /**
-     * return the vertical angles in DEGREES of the vector this-->p,
+     * return the vertical angles in DEGREES of the vector this to p,
      *
      * @param h: is the extra height of the point p (used by GISElement).
      */
@@ -350,29 +330,4 @@ public class Point3D implements Geom_element, Serializable
     {
         return Math.toRadians(a);
     }
-
-    ////////////////////////////////////////////////////////////////////////////////
-
-
-    //TODO CHECK FOR INPUT
-    public Point3D FromDegreeToRadian()
-    {
-        double r, theta, phi;
-        r = d2r(this.x());
-        theta = d2r(this.y());
-        phi = this.z();
-        return new Point3D(r, theta, phi);
-    }
-
-
-    //TODO CHECK FOR INPUT
-    public Point3D FromRadianToDegree()
-    {
-        double Lat, Lon, Alt;
-        Lat = r2d(this.x());
-        Lon = r2d(this.y());
-        Alt = this.z();
-        return new Point3D(Lat, Lon, Alt);
-    }
-
 }

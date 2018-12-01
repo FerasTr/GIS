@@ -5,12 +5,21 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/**
+ * This class implements GIS layer, it holds elements in a HashedSet (No duplicates).
+ */
 public class Layer_GIS implements GIS_layer
 {
+    // Params for storing metadata collection on the project which is the time of creation and holds multiple elemnts.
     private MetadataOfCollection_GIS metadata_of_file;
     private Set<GIS_element> csv_file;
     public String filename;
 
+    /**
+     * Time of creation of the file, LinkedHashSet of lines.
+     *
+     * @param filename name of file
+     */
     public Layer_GIS(String filename)
     {
         metadata_of_file = new MetadataOfCollection_GIS();
@@ -18,6 +27,7 @@ public class Layer_GIS implements GIS_layer
         this.filename = filename;
     }
 
+    // METHODS OF HASHED LINKED SET
     @Override
     public Meta_data get_Meta_data()
     {
@@ -102,6 +112,11 @@ public class Layer_GIS implements GIS_layer
         csv_file.clear();
     }
 
+    /**
+     * To String of all lines.
+     *
+     * @return sorted data
+     */
     public String toString()
     {
         StringBuilder out = new StringBuilder();
@@ -112,6 +127,11 @@ public class Layer_GIS implements GIS_layer
         return out.toString();
     }
 
+    /**
+     * Get the file name
+     *
+     * @return
+     */
     public String getFilename()
     {
         return this.filename;

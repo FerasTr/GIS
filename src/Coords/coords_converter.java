@@ -28,7 +28,7 @@ public interface coords_converter
     public Point3D vector3D(Point3D gps0, Point3D gps1);
 
     /**
-     * computes the polar representation of the 3D vector be gps0-->gps1
+     * computes the polar representation of the 3D vector be gps0 to gps1
      * Note: this method should return an azimuth (aka yaw), elevation (pitch), and distance
      */
     public double[] azimuth_elevation_dist(Point3D gps0, Point3D gps1);

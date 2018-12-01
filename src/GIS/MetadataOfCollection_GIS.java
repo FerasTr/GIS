@@ -4,6 +4,9 @@ import Geom.Point3D;
 
 import java.util.Date;
 
+/**
+ * This class implements the metadata interface which allows us to create metadata about the project (TIME OF CREATION)
+ */
 public class MetadataOfCollection_GIS implements Meta_data
 {
     private long time_of_folder;

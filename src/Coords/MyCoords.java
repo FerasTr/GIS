@@ -2,10 +2,21 @@ package Coords;
 
 import Geom.Point3D;
 
+/**
+ * This class implements coords_converter interface, it is used for basic calculations on points.
+ */
+
 public class MyCoords implements coords_converter
 {
     public final static double EARTH_RADIUS = 6371000;
 
+    /**
+     * Will convert to degree then add the points.
+     *
+     * @param gps                   Point in degree as used in GIS.
+     * @param local_vector_in_meter vector used for calculations.
+     * @return new gps point after transformation.
+     */
     @Override
     public Point3D add(Point3D gps, Point3D local_vector_in_meter)
     {
@@ -26,6 +37,13 @@ public class MyCoords implements coords_converter
         return new Point3D(latitude, longitude, altitude);
     }
 
+    /**
+     * Calculates the distance between two gps (degree) points, uses vector3D to calculate the vector between them.
+     *
+     * @param gps0 point 1 in degree
+     * @param gps1 point 2 in degree
+     * @return the distance in meters between the two points
+     */
     @Override
     public double distance3d(Point3D gps0, Point3D gps1)
     {
@@ -35,6 +53,13 @@ public class MyCoords implements coords_converter
         return distance;
     }
 
+    /**
+     * Calculates the vector between gps0 and gps1.
+     *
+     * @param gps0 point 1 in degree
+     * @param gps1 point 2 in degree
+     * @return new point which represents the vector,
+     */
     @Override
     public Point3D vector3D(Point3D gps0, Point3D gps1)
     {
@@ -55,6 +80,13 @@ public class MyCoords implements coords_converter
         return new Point3D(diff_x, diff_y, diff_z);
     }
 
+    /**
+     * Calculates the yaw, elevation, distance of gps1 relative to gps0
+     *
+     * @param gps0 point 1 in degree to be taken as anchor
+     * @param gps1 point 2 in degree
+     * @return array of size 3 which holds the values.
+     */
     @Override
     public double[] azimuth_elevation_dist(Point3D gps0, Point3D gps1)
     {
@@ -77,6 +109,13 @@ public class MyCoords implements coords_converter
         return yaw_pitch_dist;
     }
 
+    /**
+     * Check if the gps point (in degree) is correct i.e: Latitude = [-180,+180], Longitude = [-90,+90], Latitude =
+     * [-450, +inf].
+     *
+     * @param p point in degree to be checked
+     * @return true if valid, false otherwise.
+     */
     @Override
     public boolean isValid_GPS_Point(Point3D p)
     {

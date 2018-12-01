@@ -8,6 +8,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
+/**
+ * This class holds the information about the WIFI network from one line of the CSV folder.
+ */
 public class Metadata implements Meta_data
 {
     private String mac;
@@ -32,12 +35,18 @@ public class Metadata implements Meta_data
         this.type = type;
     }
 
+    /**
+     * Use the first-seen as the date of creation for viewing on the placemark
+     *
+     * @return First-seen time in milli seconds.
+     */
     @Override
     public long getUTC()
     {
         Calendar whole_date = null;
         try
         {
+            // Format the date into YYYY-MM-DD HH:MM:SS
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             Date date_recorded = format.parse(this.first_seen);
             whole_date = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
@@ -50,6 +59,11 @@ public class Metadata implements Meta_data
         return whole_date.getTimeInMillis();
     }
 
+    /**
+     * Used for viewing the metadata
+     *
+     * @return String of the information
+     */
     @Override
     public String toString()
     {

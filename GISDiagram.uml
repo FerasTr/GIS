@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1243.7879540598287" y="1193.5">GIS.GIS_project</node>
+    <node x="1067.2216977466976" y="551.0">GIS.Meta_data</node>
+    <node x="529.8958333333333" y="1357.0">File_format.WriteToKML</node>
+    <node x="1353.0815170940168" y="1390.0">GIS.Project_GIS</node>
+    <node x="638.0237810800311" y="79.0">Geom.Point3D</node>
+    <node x="1380.5272702991451" y="848.0">GIS.MetadataOfCollection_GIS</node>
+    <node x="490.16666666666663" y="660.0">Coords.MyCoords</node>
+    <node x="282.25670405982885" y="1160.0">GIS.Element_GIS</node>
+    <node x="1099.1001869658119" y="1412.5">File_format.CsvReader</node>
+    <node x="1155.0966977466976" y="870.5">GIS.GIS_layer</node>
+    <node x="884.5341977466976" y="671.0">GIS.GIS_element</node>
+    <node x="928.8058396464644" y="1569.0">File_format.Csv2kml</node>
+    <node x="21.5" y="771.0">GIS.Metadata</node>
+    <node x="696.5237810800311" y="0.0">Geom.Geom_element</node>
+    <node x="924.7879540598287" y="1149.0">GIS.Layer_GIS</node>
+    <node x="462.5" y="551.0">Coords.coords_converter</node>
+    <node x="1221.8835202991452" y="1670.0">Algorithm.MultiCSV</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Geom.Point3D" target="Geom.Geom_element">
+      <point x="-61.25" y="-191.0" />
+      <point x="699.2737810800311" y="59.0" />
+      <point x="744.5237810800311" y="59.0" />
+      <point x="-16.0" y="14.5" />
+    </edge>
+    <edge source="GIS.GIS_element" target="Geom.Geom_element">
+      <point x="0.0" y="-14.5" />
+      <point x="941.0341977466976" y="600.0" />
+      <point x="956.3675310800311" y="600.0" />
+      <point x="956.3675310800311" y="49.0" />
+      <point x="808.5237810800311" y="49.0" />
+      <point x="48.0" y="14.5" />
+    </edge>
+    <edge source="File_format.Csv2kml" target="GIS.GIS_layer">
+      <point x="-15.625" y="-25.5" />
+      <point x="975.6808396464644" y="1539.0" />
+      <point x="914.2879540598287" y="1539.0" />
+      <point x="914.2879540598287" y="1099.0" />
+      <point x="1184.7841977466976" y="1099.0" />
+      <point x="-17.8125" y="14.5" />
+    </edge>
+    <edge source="File_format.Csv2kml" target="File_format.CsvReader">
+      <point x="15.625" y="-25.5" />
+      <point x="1006.9308396464644" y="1539.0" />
+      <point x="1132.8501869658119" y="1539.0" />
+      <point x="-33.75" y="25.5" />
+    </edge>
+    <edge source="GIS.Element_GIS" target="Geom.Point3D">
+      <point x="0.0" y="-48.0" />
+      <point x="555.2567040598288" y="1029.0" />
+      <point x="702.6666666666666" y="1029.0" />
+      <point x="702.6666666666666" y="531.0" />
+      <point x="760.5237810800311" y="531.0" />
+      <point x="0.0" y="191.0" />
+    </edge>
+    <edge source="GIS.Element_GIS" target="Coords.MyCoords">
+      <point x="-60.666666666666515" y="-48.0" />
+      <point x="494.59003739316233" y="1019.0" />
+      <point x="585.6666666666666" y="1019.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="File_format.CsvReader" target="GIS.GIS_layer">
+      <point x="50.625" y="-25.5" />
+      <point x="1217.2251869658119" y="1327.0" />
+      <point x="1233.2879540598287" y="1327.0" />
+      <point x="1233.2879540598287" y="1109.0" />
+      <point x="1208.5341977466976" y="1109.0" />
+      <point x="5.9375" y="14.5" />
+    </edge>
+    <edge source="File_format.WriteToKML" target="GIS.GIS_element">
+      <point x="-84.6875" y="-81.0" />
+      <point x="580.7083333333333" y="1327.0" />
+      <point x="11.0" y="1327.0" />
+      <point x="11.0" y="741.0" />
+      <point x="895.8341977466976" y="741.0" />
+      <point x="-45.200000000000045" y="14.5" />
+    </edge>
+    <edge source="GIS.Element_GIS" target="GIS.Meta_data">
+      <point x="182.0" y="-48.0" />
+      <point x="737.2567040598288" y="1059.0" />
+      <point x="820.9377670940169" y="1059.0" />
+      <point x="820.9377670940169" y="620.0" />
+      <point x="1086.5341977466976" y="620.0" />
+      <point x="-32.1875" y="14.5" />
+    </edge>
+    <edge source="Algorithm.MultiCSV" target="File_format.Csv2kml">
+      <point x="-94.0" y="-37.0" />
+      <point x="1245.3835202991452" y="1650.0" />
+      <point x="991.3058396464644" y="1650.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="GIS.Layer_GIS" target="GIS.MetadataOfCollection_GIS">
+      <point x="74.5" y="-59.0" />
+      <point x="1148.2879540598287" y="1119.0" />
+      <point x="1407.9022702991451" y="1119.0" />
+      <point x="-82.125" y="37.0" />
+    </edge>
+    <edge source="GIS.MetadataOfCollection_GIS" target="GIS.Meta_data">
+      <point x="-54.75" y="-37.0" />
+      <point x="1435.2772702991451" y="751.0" />
+      <point x="1491.6770833333333" y="751.0" />
+      <point x="1491.6770833333333" y="620.0" />
+      <point x="1150.9091977466976" y="620.0" />
+      <point x="32.1875" y="14.5" />
+    </edge>
+    <edge source="GIS.Meta_data" target="Geom.Point3D">
+      <point x="0.0" y="-14.5" />
+      <point x="1118.7216977466976" y="521.0" />
+      <point x="849.6146901709403" y="521.0" />
+      <point x="89.09090909090924" y="191.0" />
+    </edge>
+    <edge source="File_format.WriteToKML" target="GIS.GIS_project">
+      <point x="118.5625" y="-81.0" />
+      <point x="783.9583333333333" y="1337.0" />
+      <point x="1254.4879540598288" y="1337.0" />
+      <point x="-42.80000000000001" y="14.5" />
+    </edge>
+    <edge source="GIS.MetadataOfCollection_GIS" target="Geom.Point3D">
+      <point x="54.75" y="-37.0" />
+      <point x="1544.7772702991451" y="751.0" />
+      <point x="1502.6770833333333" y="751.0" />
+      <point x="1502.6770833333333" y="511.0" />
+      <point x="871.8874174436676" y="511.0" />
+      <point x="111.36363636363649" y="191.0" />
+    </edge>
+    <edge source="GIS.Project_GIS" target="GIS.Meta_data">
+      <point x="126.25" y="-48.0" />
+      <point x="1630.8315170940168" y="1337.0" />
+      <point x="1610.0272702991451" y="1337.0" />
+      <point x="1610.0272702991451" y="610.0" />
+      <point x="1163.7841977466976" y="610.0" />
+      <point x="45.0625" y="14.5" />
+    </edge>
+    <edge source="GIS.GIS_project" target="GIS.GIS_layer">
+      <point x="-26.75" y="-14.5" />
+      <point x="1270.5379540598287" y="1099.0" />
+      <point x="1220.4091977466976" y="1099.0" />
+      <point x="17.8125" y="14.5" />
+    </edge>
+    <edge source="Algorithm.MultiCSV" target="GIS.GIS_project">
+      <point x="47.0" y="-37.0" />
+      <point x="1386.3835202991452" y="1640.0" />
+      <point x="1313.4879540598288" y="1640.0" />
+      <point x="1313.4879540598288" y="1337.0" />
+      <point x="1318.6879540598288" y="1337.0" />
+      <point x="21.399999999999977" y="14.5" />
+    </edge>
+    <edge source="File_format.WriteToKML" target="Geom.Point3D">
+      <point x="-118.5625" y="-81.0" />
+      <point x="546.8333333333333" y="1337.0" />
+      <point x="0.0" y="1337.0" />
+      <point x="0.0" y="481.0" />
+      <point x="649.1601447163946" y="481.0" />
+      <point x="-111.36363636363637" y="191.0" />
+    </edge>
+    <edge source="Coords.MyCoords" target="Geom.Point3D">
+      <point x="0.0" y="-25.5" />
+      <point x="585.6666666666666" y="640.0" />
+      <point x="612.0" y="640.0" />
+      <point x="612.0" y="511.0" />
+      <point x="715.9783265345766" y="511.0" />
+      <point x="-44.545454545454504" y="191.0" />
+    </edge>
+    <edge source="File_format.WriteToKML" target="GIS.Metadata">
+      <point x="-50.8125" y="-81.0" />
+      <point x="614.5833333333333" y="1317.0" />
+      <point x="103.4481837606836" y="1317.0" />
+      <point x="103.4481837606836" y="1129.0" />
+      <point x="91.5" y="1129.0" />
+      <point x="-140.0" y="114.0" />
+    </edge>
+    <edge source="GIS.Layer_GIS" target="GIS.GIS_layer">
+      <point x="24.83333333333337" y="-59.0" />
+      <point x="1098.6212873931622" y="1109.0" />
+      <point x="1196.6591977466976" y="1109.0" />
+      <point x="-5.9375" y="14.5" />
+    </edge>
+    <edge source="GIS.Layer_GIS" target="GIS.GIS_element">
+      <point x="-124.16666666666663" y="-59.0" />
+      <point x="949.6212873931622" y="1069.0" />
+      <point x="941.0341977466976" y="1069.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="File_format.Csv2kml" target="GIS.GIS_project">
+      <point x="46.875" y="-25.5" />
+      <point x="1038.1808396464644" y="1549.0" />
+      <point x="1275.8210202991452" y="1549.0" />
+      <point x="-21.399999999999977" y="14.5" />
+    </edge>
+    <edge source="GIS.Project_GIS" target="GIS.GIS_project">
+      <point x="-126.25" y="-48.0" />
+      <point x="1378.3315170940168" y="1337.0" />
+      <point x="1340.087954059829" y="1337.0" />
+      <point x="42.80000000000001" y="14.5" />
+    </edge>
+    <edge source="File_format.WriteToKML" target="GIS.Element_GIS">
+      <point x="-16.9375" y="-81.0" />
+      <point x="648.4583333333333" y="1307.0" />
+      <point x="418.75670405982885" y="1307.0" />
+      <point x="-136.5" y="48.0" />
+    </edge>
+    <edge source="GIS.Project_GIS" target="GIS.GIS_layer">
+      <point x="-25.25" y="-48.0" />
+      <point x="1479.3315170940168" y="1327.0" />
+      <point x="1429.9960202991451" y="1327.0" />
+      <point x="1429.9960202991451" y="1079.0" />
+      <point x="1244.1591977466976" y="1079.0" />
+      <point x="41.5625" y="14.5" />
+    </edge>
+    <edge source="Coords.MyCoords" target="Coords.coords_converter">
+      <point x="-63.66666666666663" y="-25.5" />
+      <point x="522.0" y="640.0" />
+      <point x="532.0" y="640.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="GIS.Element_GIS" target="Geom.Geom_element">
+      <point x="-121.33333333333326" y="-48.0" />
+      <point x="433.9233707264956" y="1129.0" />
+      <point x="452.0" y="1129.0" />
+      <point x="452.0" y="49.0" />
+      <point x="712.5237810800311" y="49.0" />
+      <point x="-48.0" y="14.5" />
+    </edge>
+    <edge source="File_format.CsvReader" target="GIS.Layer_GIS">
+      <point x="16.875" y="-25.5" />
+      <point x="1183.4751869658119" y="1327.0" />
+      <point x="1173.121287393162" y="1327.0" />
+      <point x="99.33333333333326" y="59.0" />
+    </edge>
+    <edge source="GIS.GIS_layer" target="GIS.Meta_data">
+      <point x="23.75" y="-14.5" />
+      <point x="1226.3466977466976" y="640.0" />
+      <point x="1125.1591977466976" y="640.0" />
+      <point x="6.4375" y="14.5" />
+    </edge>
+    <edge source="GIS.GIS_element" target="GIS.Meta_data">
+      <point x="37.66666666666663" y="-14.5" />
+      <point x="978.7008644133643" y="630.0" />
+      <point x="1099.4091977466976" y="630.0" />
+      <point x="-19.3125" y="14.5" />
+    </edge>
+    <edge source="GIS.Element_GIS" target="GIS.GIS_element">
+      <point x="242.66666666666674" y="-48.0" />
+      <point x="797.9233707264956" y="1069.0" />
+      <point x="848.6377670940169" y="1069.0" />
+      <point x="848.6377670940169" y="751.0" />
+      <point x="918.4341977466977" y="751.0" />
+      <point x="-22.600000000000023" y="14.5" />
+    </edge>
+    <edge source="Algorithm.MultiCSV" target="File_format.CsvReader">
+      <point x="-47.0" y="-37.0" />
+      <point x="1292.3835202991452" y="1640.0" />
+      <point x="1218.5975063131311" y="1640.0" />
+      <point x="1218.5975063131311" y="1539.0" />
+      <point x="1200.3501869658119" y="1539.0" />
+      <point x="33.75" y="25.5" />
+    </edge>
+    <edge source="GIS.Metadata" target="GIS.Meta_data">
+      <point x="105.0" y="-114.0" />
+      <point x="336.5" y="731.0" />
+      <point x="691.6666666666666" y="731.0" />
+      <point x="691.6666666666666" y="610.0" />
+      <point x="1073.6591977466976" y="610.0" />
+      <point x="-45.0625" y="14.5" />
+    </edge>
+    <edge source="GIS.GIS_element" target="Geom.Point3D">
+      <point x="-37.66666666666663" y="-14.5" />
+      <point x="903.3675310800311" y="600.0" />
+      <point x="913.8637116355865" y="600.0" />
+      <point x="913.8637116355865" y="531.0" />
+      <point x="827.3419628982128" y="531.0" />
+      <point x="66.81818181818176" y="191.0" />
+    </edge>
+    <edge source="Geom.Geom_element" target="Geom.Point3D">
+      <point x="16.0" y="14.5" />
+      <point x="776.5237810800311" y="59.0" />
+      <point x="821.7737810800311" y="59.0" />
+      <point x="61.25" y="-191.0" />
+    </edge>
+    <edge source="GIS.GIS_project" target="GIS.Meta_data">
+      <point x="26.75" y="-14.5" />
+      <point x="1324.0379540598287" y="1109.0" />
+      <point x="1356.3817040598287" y="1109.0" />
+      <point x="1356.3817040598287" y="630.0" />
+      <point x="1138.0341977466976" y="630.0" />
+      <point x="19.3125" y="14.5" />
+    </edge>
+    <edge source="Algorithm.MultiCSV" target="GIS.Project_GIS">
+      <point x="94.0" y="-37.0" />
+      <point x="1433.3835202991452" y="1650.0" />
+      <point x="1504.5815170940168" y="1650.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="GIS.Layer_GIS" target="GIS.Meta_data">
+      <point x="-24.833333333333258" y="-59.0" />
+      <point x="1048.9546207264955" y="1069.0" />
+      <point x="1017.6487810800311" y="1069.0" />
+      <point x="1017.6487810800311" y="640.0" />
+      <point x="1112.2841977466976" y="640.0" />
+      <point x="-6.4375" y="14.5" />
+    </edge>
+    <edge source="GIS.Element_GIS" target="GIS.Metadata">
+      <point x="-242.66666666666652" y="-48.0" />
+      <point x="312.59003739316233" y="1129.0" />
+      <point x="231.5" y="1129.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="File_format.WriteToKML" target="GIS.GIS_layer">
+      <point x="16.9375" y="-81.0" />
+      <point x="682.3333333333333" y="1307.0" />
+      <point x="838.7567040598287" y="1307.0" />
+      <point x="838.7567040598287" y="1079.0" />
+      <point x="1161.0341977466976" y="1079.0" />
+      <point x="-41.5625" y="14.5" />
+    </edge>
+    <edge source="GIS.Project_GIS" target="GIS.MetadataOfCollection_GIS">
+      <point x="25.25" y="-48.0" />
+      <point x="1529.8315170940168" y="1337.0" />
+      <point x="1524.5520833333333" y="1337.0" />
+      <point x="1524.5520833333333" y="1129.0" />
+      <point x="1517.4022702991451" y="1129.0" />
+      <point x="27.375" y="37.0" />
+    </edge>
+    <edge source="File_format.Csv2kml" target="File_format.WriteToKML">
+      <point x="-46.875" y="-25.5" />
+      <point x="944.4308396464644" y="1549.0" />
+      <point x="665.3958333333333" y="1549.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="File_format.CsvReader" target="GIS.Element_GIS">
+      <point x="-50.625" y="-25.5" />
+      <point x="1115.9751869658119" y="1297.0" />
+      <point x="691.7567040598288" y="1297.0" />
+      <point x="136.5" y="48.0" />
+    </edge>
+    <edge source="GIS.GIS_layer" target="GIS.GIS_element">
+      <point x="-23.75" y="-14.5" />
+      <point x="1178.8466977466976" y="751.0" />
+      <point x="986.2341977466976" y="751.0" />
+      <point x="45.200000000000045" y="14.5" />
+    </edge>
+    <edge source="File_format.WriteToKML" target="GIS.Layer_GIS">
+      <point x="84.6875" y="-81.0" />
+      <point x="750.0833333333333" y="1327.0" />
+      <point x="974.4546207264955" y="1327.0" />
+      <point x="-99.33333333333331" y="59.0" />
+    </edge>
+    <edge source="GIS.Metadata" target="Geom.Point3D">
+      <point x="-105.0" y="-114.0" />
+      <point x="126.5" y="491.0" />
+      <point x="671.4328719891218" y="491.0" />
+      <point x="-89.09090909090912" y="191.0" />
+    </edge>
+    <edge source="Coords.coords_converter" target="Geom.Point3D">
+      <point x="0.0" y="-14.5" />
+      <point x="532.0" y="501.0" />
+      <point x="693.7055992618491" y="501.0" />
+      <point x="-66.81818181818187" y="191.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="246.8650793650795" y="746.8571428571428" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
