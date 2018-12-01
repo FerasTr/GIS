@@ -5,15 +5,17 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class Layer implements GIS_layer
+public class Layer_GIS implements GIS_layer
 {
-    private MetadataOfCollection metadata_of_file;
-    Set<GIS_element> csv_file;
+    private MetadataOfCollection_GIS metadata_of_file;
+    private Set<GIS_element> csv_file;
+    public String filename;
 
-    public Layer()
+    public Layer_GIS(String filename)
     {
-        metadata_of_file = new MetadataOfCollection();
+        metadata_of_file = new MetadataOfCollection_GIS();
         csv_file = new LinkedHashSet<GIS_element>();
+        this.filename = filename;
     }
 
     @Override
@@ -98,5 +100,20 @@ public class Layer implements GIS_layer
     public void clear()
     {
         csv_file.clear();
+    }
+
+    public String toString()
+    {
+        StringBuilder out = new StringBuilder();
+        for (GIS_element line : this.csv_file)
+        {
+            out.append(line.toString() + '\n');
+        }
+        return out.toString();
+    }
+
+    public String getFilename()
+    {
+        return this.filename;
     }
 }

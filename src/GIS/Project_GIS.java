@@ -5,14 +5,14 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class Project implements GIS_project
+public class Project_GIS implements GIS_project
 {
-    private MetadataOfCollection metadata_of_files;
-    Set<GIS_layer> csv_folder;
+    private MetadataOfCollection_GIS metadata_of_files;
+    private Set<GIS_layer> csv_folder;
 
-    public Project()
+    public Project_GIS()
     {
-        metadata_of_files = new MetadataOfCollection();
+        metadata_of_files = new MetadataOfCollection_GIS();
         csv_folder = new LinkedHashSet<GIS_layer>();
     }
 

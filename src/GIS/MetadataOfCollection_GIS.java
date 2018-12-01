@@ -4,11 +4,11 @@ import Geom.Point3D;
 
 import java.util.Date;
 
-public class MetadataOfCollection implements Meta_data
+public class MetadataOfCollection_GIS implements Meta_data
 {
     private long time_of_folder;
 
-    public MetadataOfCollection()
+    public MetadataOfCollection_GIS()
     {
         Date date = new Date();
         time_of_folder = date.getTime();
